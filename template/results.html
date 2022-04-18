@@ -1,0 +1,12 @@
+{% extends 'index.html' %}
+{% block main %}
+    <div style="width:500px; height:500px;" overflow="auto">
+        
+        <ul class="list-group list-group-flush">
+            {% for row in result %}
+            <li class="list-group-item">{{}}</li>
+            {% endfor %}
+        </ul>
+    </div>
+        
+{% endblock %}
